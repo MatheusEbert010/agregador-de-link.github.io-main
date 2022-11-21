@@ -1,0 +1,94 @@
+body{
+    min-width: 150px;
+    background-repeat: no-repeat;
+    font-family:-apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient( #032d02, #001100);
+}
+.perfil{
+    background-image: linear-gradient(#4a793d, #659558, #80b172, #9ccd8c, #b7e9a6);
+    padding: 5px;
+    margin: 20px;
+    height: 210px;
+    width: 200px;
+    border: 2px solid #d0ffc0;
+    border-radius: 50%;
+}
+h1{
+    color: #b7e9a6;
+}
+h4{
+    background-color: #80b172;
+}
+span{
+    color: #d0ffc0;
+    flex-direction: column;
+}
+#elementEl::after{
+    content: "|";
+    margin-left: 5px;
+    animation: blink 0.6s infinite;
+}
+.lrotate{
+    margin-top: 30px;
+    width: 180px;
+    height: 180px;
+    animation: rotate 10s linear infinite;
+}
+
+.logos-png{
+    display: flex;
+    width: 23px;
+    height: 23px;
+    align-items: flex-start;
+    margin-right: 10px;
+    text-align: start;
+}
+.links-redes{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 160px;
+}
+a{
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    background-color:#1c591c;
+    text-transform: uppercase;
+    color: #d0ffc0;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+a:hover{
+    background-color: #077707;
+    transition: 0.4s;
+}
+footer{
+    border: 2px solid;
+    height: 10vh;
+    background-color: #d0ffc0;
+    
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(1deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
